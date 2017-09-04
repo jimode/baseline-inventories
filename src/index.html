@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap 4 Starter Pack</title>
+    <title>Baseline Inventories</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Bootstrap 4 Starter Pack</h1>
-    <p>Version 4.0.0.0-beta</p>
+<body id="home">
+    <nav class="navbar navbar-expand-md navbar-light fixe-top py-4">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="/img/brand-sample-logo.png" width="50px" height="50px" alt="baseline">
+                <h3 class="d-inline align-middle">Baseline Inventories</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#prices" class="nav-link">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav><!-- nav -->
+    <!-- Note: Move this index.html to a /public folder -->
+
+    <section id="showcase" class="py-5">
+        <div class="primary-overlay text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="display-5 mt-5 pt-5">Baseline Inventory Services</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar-fixed.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 {
-  "name": "bs4starter",
+  "name": "baseline",
   "version": "1.0.0",
   "description": "Bootstrap 4 workflow",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "gulp"
   },
@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "4.0.0-beta",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.3"
@@ -17,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-ejs": "^3.0.1",
     "gulp-sass": "^3.1.0"
   }
 }
