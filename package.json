@@ -2,7 +2,7 @@
   "name": "baseline",
   "version": "1.0.0",
   "description": "Bootstrap 4 workflow",
-  "main": "index.html",
+  "main": "index.ejs",
   "scripts": {
     "start": "gulp"
   },
