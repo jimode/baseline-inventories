@@ -24,6 +24,6 @@ app.get('/who/:name?', function (req, res) {
     res.send(name + ' was here');
 });
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port 3000');
+var server = app.listen(8000, function() {
+    console.log('Listening on port 8000');
 });
