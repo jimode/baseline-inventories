@@ -9,12 +9,10 @@
         <div class="primary-overlay text-white">
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col"></div>
-                    <div class="hero-text col-lg-6 text-center py-3">
-                        <h1 class="display-5">App-js: Baseline Inventory Services <%= title %></h1>
+                    <div class="hero-text col-lg-6 m-auto text-center py-3">
+                        <h1 class="display-5">App-js: Baseline Inventory Services for <%= title %></h1>
                         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col"></div>
                 </div>
             </div>
         </div>
@@ -59,16 +57,36 @@
             </div>
         </div>
     </section>
-    <footer>
+    
+    <footer class="container-fluid">
         <div class="container text-muted pb-4">
-            <div class="row">
-                <div class="col">
+            <div class="row pt-5">
+                <div class="col-lg-4">
                     <h5>Areas we cover</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro, dolorem minus, enim dignissimos ipsum quaerat iste incidunt, obcaecati commodi perspiciatis corporis consectetur voluptatem eveniet voluptas eligendi! Soluta, veniam, sapiente.</p>
+                    <ul class="list-unstyled">
+                        <li>Kent </li>
+                        <li>Essex</li>
+                        <li>Surrey</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                        <h5>Nav items</h5>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Prices</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>                
+                <div class="col-lg-4 ml-auto">
+                    <p>social media icons</p>
                 </div>
             </div>
+            <div class="copyright row pt-4">
+                <p>&copy; All rights reserved <%= new Date().toISOString().substr(0,4) %>. Baseline Inventories Ltd.</p>
+            </div>
         </div>
-    </footer>
+    </footer><!-- footer -->
     
     <% include partials/page/jsdefaults.ejs %> 
 </body>

@@ -48,3 +48,11 @@ body {
         }
     }
 }
+
+footer {
+    background-color: $card-color-2;
+
+    .copyright {
+        border-top: 1px solid rgba(127, 140, 141,1.0);
+    }
+}
