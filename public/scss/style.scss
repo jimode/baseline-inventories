@@ -13,6 +13,7 @@ body {
     box-shadow: 2px 2px 5px $primary;
     opacity: 0.9;
     background: #fff;
+    border-bottom: 3px solid $card-color-2;
 
     .nav-item {
         font-size: 1.4rem;
@@ -49,8 +50,23 @@ body {
     }
 }
 
-footer {
+#contact {
+    background: url(../img/regal.png);
+
+    .contact-card {
+        background-color: #34495E;
+    }
+}
+
+#footer {
     background-color: $card-color-2;
+
+    .fa {
+        font-size: 25px;
+        &:hover {
+            color: #fff;
+        }
+    }
 
     .copyright {
         border-top: 1px solid rgba(127, 140, 141,1.0);

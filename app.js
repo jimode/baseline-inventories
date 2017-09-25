@@ -1,9 +1,11 @@
 var express = require('express');
 var app = express();
 
+app.set('port', process.env.PORT || 4000);
 app.set('view engine', 'ejs');
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('views', __dirname + 'views');
+
 app.use(express.static('public')); //serves the index.html as the static file
 // app.use(express.static(path.join(__dirname, 'public')));
 
@@ -24,6 +26,6 @@ app.get('/who/:name?', function (req, res) {
     res.send(name + ' was here');
 });
 
-var server = app.listen(8000, function() {
-    console.log('Listening on port 8000');
+var server = app.listen(app.get('port'), function() {
+    console.log('Listening on port ' + app.get('port'));
 });
