@@ -1,12 +1,73 @@
-$primary:#3292a6;
+/***********************************************************************************************/
+/* SASS Variables */
+/***********************************************************************************************/
+$link-color: #E74B34;
+$link-color-hover: #132C3B;
+
+$text-color: #6c6c6c;
+
+$border-color: #E0E0E0;
+
+$blockquote-color: #2894d8;
+
+$header-main-color: #3694b7;
+$light-bg-heading-one: #3b5568;
+$light-bg-heading-two: #6694b4;
+$dark-bg-heading-one: white;
+$dark-bg-heading-two: #3694b7;
+
+$base-font-size: 16px;
+$body-font: "Cabin", Helvetica, Arial, sans-serif;
+$serif-font: "Gentium Basic", Georgia, serif;
+$heading-font: $body-font;
+
+$baseline: $base-font-size * 1.5;
+
+$icon-size: 30px;
+
+
+/***********************************************************************************************/
+/* Initial SASS Variables */
+/***********************************************************************************************/
+$primary: #3292a6;
 $primary-overlay: rgba(50,146,166,0.8);
 $primary-overlay-2: rgba(127, 140, 141,0.1);
-$hero-text-background: rgba(44, 62, 80, 0.5);
+$hero-text-background: rgba(44, 62, 80, 0.9);
 $card-color: rgba(110, 94, 80, 0.8);
 $card-color-2: rgba(44, 62, 80, 1.0);
 
+/***********************************************************************************************/
+/* 1. General Styles */
+/***********************************************************************************************/
 body {
     // margin-top: 105px;
+    font: 16px/24px $body-font;
+    color: $text-color;
+
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+p {
+    margin-bottom: $baseline;
+}
+
+h1 { font: 36px/1.5em $heading-font }
+
+h2, h3 { font: 21px/1.5em $heading-font }
+
+h4 { font: 16px/1.5em $heading-font }
+
+h5 { font: 14px/1.5em $heading-font }
+
+h6 { font: 12px/1.5em $heading-font }
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-color-hover;
+    }
 }
 
 .navbar {
@@ -39,6 +100,38 @@ body {
         .hero-text {
             background-color: $hero-text-background;
         }
+
+        h1 {
+            color: $dark-bg-heading-one;
+        }
+
+        h2.lead {
+            color: $dark-bg-heading-two;
+            font-size: 28px;
+        }
+    }
+}
+
+#service-small-features {
+    background: url(../img/pattern-dark.jpg);
+
+    .fa {
+        margin-top: 6px;
+        font-size: $icon-size;
+        color: $link-color;
+    }
+
+    // change the name of this selector
+    .p4.align-self-end {
+        h3 {
+            color: $dark-bg-heading-two;
+            // .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
+        }
+
+        p {
+            color: white;
+        }
+        margin-left: 20px;
     }
 }
 
