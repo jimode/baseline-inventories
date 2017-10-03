@@ -4,6 +4,45 @@
 
 <body id="home">
     <% include partials/page/navbar.ejs %>
+      
+    <!-- CONTACT MODAL -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLongTitle">Contact Us</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="clearfix">
+                        <li>
+                            <span class="fa fa-envelope-o fa-lg" aria-hidden="true"></span>
+                            <h3><a href="mailto:hello@baseline-inventories.co.uk">hello@baseline-inventories.co.uk</a></h3>
+                        </li>
+                        <li>
+                            <span class="fa fa-mobile-phone fa-lg" aria-hidden="true"></span>
+                            <h3>07956433606</h3>
+                        </li>
+                        <!-- <li>
+                            <span class="fa fa-map-marker fa-lg " aria-hidden="true"></span>
+                            <h3>Registered address</h3>
+                        </li> -->
+                        <li>
+                            <span class="fa fa-facebook fa-lg"></span>
+                            <h3>Baseline Inventories on Facebook</h3>
+                        </li>
+                        <li>
+                            <span class="fa fa-twitter fa-lg"></span>
+                            <h3>Baseline Inventories on Twitter</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal -->
 
     <section id="showcase" class="py-5">
         <div class="primary-overlay text-white">
@@ -14,7 +53,6 @@
                         <h2 class="lead">Professional Inventory Services.</h2>
                         <a href="#" class="btn btn-outline-light">Contact Us Now</a>
                     </div>
-                    div>btn.pri
                 </div>
             </div>
         </div>
@@ -137,7 +175,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-5">
+    <!-- <section id="contact" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 pb-5 mx-auto">
@@ -178,7 +216,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <footer id="footer" class="container-fluid">
         <div class="container text-muted pb-4">

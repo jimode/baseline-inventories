@@ -45,6 +45,36 @@ a {
     font-size: 1.4rem;
     padding-right: 20px; }
 
+#contact-modal, .modal-content {
+  background-color: rgba(39, 41, 48, 0.985); }
+
+.modal-dialog {
+  margin-top: 90px; }
+
+.modal-content {
+  border: none; }
+  .modal-content .modal-header {
+    padding-left: 0; }
+    .modal-content .modal-header h1 {
+      color: white; }
+  .modal-content .modal-body {
+    padding-left: 0; }
+    .modal-content .modal-body ul {
+      padding-left: 0; }
+      .modal-content .modal-body ul li {
+        margin-top: 18px;
+        list-style: none;
+        text-align: left; }
+        .modal-content .modal-body ul li h3 {
+          color: #3694b7; }
+        .modal-content .modal-body ul li .fa {
+          margin-right: 21px;
+          margin-top: 9px;
+          float: left;
+          text-align: center;
+          display: inline-block;
+          width: 20px; }
+
 #showcase {
   position: relative;
   background: url("../img/interior-1.jpeg") no-repeat center center;

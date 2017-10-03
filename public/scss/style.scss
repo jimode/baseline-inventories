@@ -82,6 +82,51 @@ a {
     }
 }
 
+#contact-modal, .modal-content {
+    background-color: rgba(39,41,48,0.985);
+}
+
+.modal-dialog {
+    margin-top: 90px;
+}
+
+.modal-content {
+    border: none;
+
+    .modal-header {
+        padding-left: 0;
+        h1 { color: white; }
+    }
+
+    .modal-body {
+        padding-left: 0;
+        ul {
+            padding-left: 0;
+            li { 
+                margin-top: 18px;
+                list-style: none;
+                text-align: left;
+                
+                h3 {
+                    color: #3694b7;
+                    // margin-left: 20px;
+                }
+
+                .fa {
+                    margin-right: 21px;
+                    margin-top: 9px;
+                    float: left;
+                    text-align: center;
+                    display: inline-block;
+                    width: 20px;
+                }
+            }
+
+            
+        }
+    }
+}
+
 #showcase {
     position: relative;
     background: url('../img/interior-1.jpeg') no-repeat center center;
