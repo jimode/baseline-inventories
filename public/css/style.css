@@ -54,17 +54,23 @@ a {
 .modal-content {
   border: none; }
   .modal-content .modal-header {
+    border-bottom: 1px solid #6c6c6c;
     padding-left: 0; }
     .modal-content .modal-header h1 {
       color: white; }
+    .modal-content .modal-header button .fa-times {
+      color: #6c6c6c;
+      text-shadow: none;
+      font-size: 30px; }
   .modal-content .modal-body {
     padding-left: 0; }
+    .modal-content .modal-body ul li {
+      list-style: none;
+      text-align: left; }
     .modal-content .modal-body ul {
       padding-left: 0; }
       .modal-content .modal-body ul li {
-        margin-top: 18px;
-        list-style: none;
-        text-align: left; }
+        margin-top: 18px; }
         .modal-content .modal-body ul li h3 {
           color: #3694b7; }
         .modal-content .modal-body ul li .fa {
@@ -74,6 +80,11 @@ a {
           text-align: center;
           display: inline-block;
           width: 20px; }
+      .modal-content .modal-body ul li.email a {
+        color: #3694b7;
+        text-decoration: none; }
+      .modal-content .modal-body ul li.mobile-nos h3 {
+        color: #6c6c6c; }
 
 #showcase {
   position: relative;

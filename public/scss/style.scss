@@ -94,24 +94,32 @@ a {
     border: none;
 
     .modal-header {
+        border-bottom: 1px solid $text-color;
         padding-left: 0;
+
         h1 { color: white; }
+
+        button {
+            .fa-times {
+                color: $text-color;
+                text-shadow: none;
+                // text-decoration: none;
+                font-size: 30px;
+            }
+        }
     }
 
     .modal-body {
         padding-left: 0;
+        ul li { list-style: none; text-align: left; }
         ul {
             padding-left: 0;
             li { 
-                margin-top: 18px;
-                list-style: none;
-                text-align: left;
-                
+                margin-top: 18px;       
                 h3 {
                     color: #3694b7;
                     // margin-left: 20px;
                 }
-
                 .fa {
                     margin-right: 21px;
                     margin-top: 9px;
@@ -121,8 +129,17 @@ a {
                     width: 20px;
                 }
             }
-
-            
+            li.email {
+                a {
+                    color: $dark-bg-heading-two;
+                    text-decoration: none;
+                }
+            }
+            li.mobile-nos {
+                h3 {
+                    color: $text-color;
+                }
+            }
         }
     }
 }
