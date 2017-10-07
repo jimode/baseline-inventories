@@ -4,7 +4,7 @@
   "description": "Bootstrap 4 workflow",
   "main": "index.ejs",
   "scripts": {
-    "start": "node app.js && gulp"
+    "start": "gulp"
   },
   "author": "Jimi Odeyemi",
   "license": "ISC",
@@ -20,6 +20,8 @@
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-ejs": "^3.0.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
   }
 }
