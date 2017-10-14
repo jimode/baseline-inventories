@@ -163,6 +163,19 @@ a {
             background-color: $hero-text-background;
         }
 
+        .hero-text .btn {
+            font-size: $base-font-size;
+            padding: 10px 16px;
+            color: #fff;
+            border: 2px solid #fff;
+            background-color: transparent;
+            &:hover {
+                background-color: #fff;
+                color: $dark-bg-heading-two;
+            }
+        }
+
+
         h1 {
             color: $dark-bg-heading-one;
         }

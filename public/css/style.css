@@ -100,6 +100,15 @@ a {
     height: 100%; }
     #showcase .primary-overlay .hero-text {
       background-color: rgba(44, 62, 80, 0.9); }
+    #showcase .primary-overlay .hero-text .btn {
+      font-size: 16px;
+      padding: 10px 16px;
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent; }
+      #showcase .primary-overlay .hero-text .btn:hover {
+        background-color: #fff;
+        color: #3694b7; }
     #showcase .primary-overlay h1 {
       color: white; }
     #showcase .primary-overlay h2.lead {
