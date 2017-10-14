@@ -12,7 +12,8 @@ const sassSources = [
 const jsSources = [
     'node_modules/bootstrap/dist/js/bootstrap.min.js', 
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/popper.js/dist/umd/popper.min.js'
+    'node_modules/popper.js/dist/umd/popper.min.js',
+    'node_modules/propellerkit/dist/js/propeller.min.js'
 ]
 
 // Compile Sass & Inject Into Browser
@@ -68,14 +69,25 @@ gulp.task('serve', ['sass', 'nodemon'], function(){
     gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
-
 // Move Fonts Folder to public
 gulp.task('fonts', function(){
     return gulp.src('node_modules/font-awesome/fonts/*')
         .pipe(gulp.dest("public/fonts"));
 });
 
-// Move Fonts Awesome CSS to public/css
+// Move Propeller Fonts Folder to public
+gulp.task('prop-fonts', function(){
+    return gulp.src('node_modules/propellerkit/dist/fonts/roboto/*')
+        .pipe(gulp.dest("public/fonts"));
+});
+
+// Move Propeller Kit CSS to public/css
+gulp.task('prop-css', function(){
+    return gulp.src('node_modules/propellerkit/dist/css/propeller.min.css')
+        .pipe(gulp.dest("public/css"));
+});
+
+// Move Fonts Awesome & Propeller Kit CSS to public/css
 gulp.task('fa', function(){
     return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
         .pipe(gulp.dest("public/css"));
@@ -86,4 +98,4 @@ gulp.task('log', function(){
     gutil.log("Jimi - the workflow is working");
 });
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('default', ['js', 'serve', 'fa', 'prop-css', 'fonts', 'prop-fonts']);

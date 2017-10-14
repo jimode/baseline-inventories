@@ -14,7 +14,8 @@
     "express": "^4.15.4",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.3"
+    "popper.js": "^1.12.3",
+    "propellerkit": "^1.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
