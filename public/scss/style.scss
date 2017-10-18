@@ -1,8 +1,9 @@
 /***********************************************************************************************/
 /* SASS Variables */
 /***********************************************************************************************/
-$link-color: #E74B34;
-$link-color-hover: #132C3B;
+$link-color: #33aaff;
+// $link-color: #E74B34;
+$link-color-hover: #ffffff;
 
 $text-color: #6c6c6c;
 
@@ -17,9 +18,9 @@ $dark-bg-heading-one: white;
 $dark-bg-heading-two: #3694b7;
 
 $base-font-size: 16px;
-$body-font: "Cabin", Helvetica, Arial, sans-serif;
-$serif-font: "Gentium Basic", Georgia, serif;
-$heading-font: $body-font;
+// $body-font: "Cabin", Helvetica, Arial, sans-serif;
+// $serif-font: "Gentium Basic", Georgia, serif;
+// $heading-font: $body-font;
 
 $baseline: $base-font-size * 1.5;
 
@@ -41,7 +42,7 @@ $card-color-2: rgba(44, 62, 80, 1.0);
 /***********************************************************************************************/
 body {
     // margin-top: 105px;
-    font: 16px/24px $body-font;
+    // font: 16px/24px $body-font;
     color: $text-color;
 
     -webkit-font-smoothing: antialiased;
@@ -52,15 +53,15 @@ p {
     margin-bottom: $baseline;
 }
 
-h1 { font: 36px/1.5em $heading-font }
+// h1 { font: 36px/1.5em $heading-font }
 
-h2, h3 { font: 21px/1.5em $heading-font }
+// h2, h3 { font: 21px/1.5em $heading-font }
 
-h4 { font: 16px/1.5em $heading-font }
+// h4 { font: 16px/1.5em $heading-font }
 
-h5 { font: 14px/1.5em $heading-font }
+// h5 { font: 14px/1.5em $heading-font }
 
-h6 { font: 12px/1.5em $heading-font }
+// h6 { font: 12px/1.5em $heading-font }
 
 a {
     color: $link-color;
@@ -171,7 +172,7 @@ a {
             background-color: transparent;
             &:hover {
                 background-color: #fff;
-                color: $dark-bg-heading-two;
+                color: $hero-text-background;
             }
         }
 
@@ -227,13 +228,42 @@ a {
 }
 
 #footer {
+
     background-color: $card-color-2;
+
+    .info{
+        .fa {
+            padding-right: 20px;
+            border-right: 1px solid $text-color;
+        }
+
+    .list {
+        padding-left: 20px;
+
+        .hide {
+            visibility: hidden; 
+        }
+    }
+    }
+
+    .social {
+        div:first-of-type .fa {
+            padding-right: 20px;
+            border-right: 1px solid $text-color;               
+        }
+
+        .list {
+            padding-left: 20px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
 
     .fa {
         font-size: 25px;
-        &:hover {
-            color: #fff;
-        }
     }
 
     .copyright {
