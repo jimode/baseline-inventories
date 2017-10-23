@@ -8,6 +8,7 @@
 /* 1. General Styles */
 /***********************************************************************************************/
 body {
+  font: 16px/24px "Cabin", Helvetica, Arial, sans-serif;
   color: #6c6c6c;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -102,12 +103,11 @@ a {
 #service-small-features {
   background: url(../img/pattern-dark.jpg); }
   #service-small-features .fa {
-    margin-top: 6px;
     font-size: 30px;
     color: #33aaff; }
   #service-small-features .p4.align-self-end {
     margin-left: 20px; }
-    #service-small-features .p4.align-self-end h3 {
+    #service-small-features .p4.align-self-end h2 {
       color: #3694b7; }
     #service-small-features .p4.align-self-end p {
       color: white; }
@@ -125,9 +125,9 @@ a {
   #footer .info .fa {
     padding-right: 20px;
     border-right: 1px solid #6c6c6c; }
-  #footer .info .list {
+  #footer .list {
     padding-left: 20px; }
-    #footer .info .list .hide {
+    #footer .list .hide {
       visibility: hidden; }
   #footer .social div:first-of-type .fa {
     padding-right: 20px;
