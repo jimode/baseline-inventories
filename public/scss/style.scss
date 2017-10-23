@@ -1,8 +1,9 @@
 /***********************************************************************************************/
 /* SASS Variables */
 /***********************************************************************************************/
-$link-color: #E74B34;
-$link-color-hover: #132C3B;
+$link-color: #33aaff;
+// $link-color: #E74B34;
+$link-color-hover: #ffffff;
 
 $text-color: #6c6c6c;
 
@@ -18,8 +19,8 @@ $dark-bg-heading-two: #3694b7;
 
 $base-font-size: 16px;
 $body-font: "Cabin", Helvetica, Arial, sans-serif;
-$serif-font: "Gentium Basic", Georgia, serif;
-$heading-font: $body-font;
+// $serif-font: "Gentium Basic", Georgia, serif;
+// $heading-font: $body-font;
 
 $baseline: $base-font-size * 1.5;
 
@@ -52,15 +53,15 @@ p {
     margin-bottom: $baseline;
 }
 
-h1 { font: 36px/1.5em $heading-font }
+// h1 { font: 36px/1.5em $heading-font }
 
-h2, h3 { font: 21px/1.5em $heading-font }
+// h2, h3 { font: 21px/1.5em $heading-font }
 
-h4 { font: 16px/1.5em $heading-font }
+// h4 { font: 16px/1.5em $heading-font }
 
-h5 { font: 14px/1.5em $heading-font }
+// h5 { font: 14px/1.5em $heading-font }
 
-h6 { font: 12px/1.5em $heading-font }
+// h6 { font: 12px/1.5em $heading-font }
 
 a {
     color: $link-color;
@@ -163,6 +164,19 @@ a {
             background-color: $hero-text-background;
         }
 
+        .hero-text .btn {
+            font-size: $base-font-size;
+            padding: 10px 16px;
+            color: #fff;
+            border: 2px solid #fff;
+            background-color: transparent;
+            &:hover {
+                background-color: #fff;
+                color: $hero-text-background;
+            }
+        }
+
+
         h1 {
             color: $dark-bg-heading-one;
         }
@@ -178,14 +192,13 @@ a {
     background: url(../img/pattern-dark.jpg);
 
     .fa {
-        margin-top: 6px;
         font-size: $icon-size;
         color: $link-color;
     }
 
     // change the name of this selector
     .p4.align-self-end {
-        h3 {
+        h2 {
             color: $dark-bg-heading-two;
             // .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
         }
@@ -214,13 +227,42 @@ a {
 }
 
 #footer {
+
     background-color: $card-color-2;
+
+    .info{
+        .fa {
+            padding-right: 20px;
+            border-right: 1px solid $text-color;
+        }
+    }
+
+    .list {
+        padding-left: 20px;
+
+        .hide {
+            visibility: hidden; 
+        }
+    }
+
+    .social {
+        div:first-of-type .fa {
+            padding-right: 20px;
+            border-right: 1px solid $text-color;               
+        }
+
+        .list {
+            padding-left: 20px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
 
     .fa {
         font-size: 25px;
-        &:hover {
-            color: #fff;
-        }
     }
 
     .copyright {
