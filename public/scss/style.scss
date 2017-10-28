@@ -3,6 +3,7 @@
 /***********************************************************************************************/
 $link-color: #33aaff;
 // $link-color: #E74B34;
+$copy-right-text: #648880;
 $link-color-hover: #ffffff;
 
 $text-color: #6c6c6c;
@@ -267,5 +268,6 @@ a {
 
     .copyright {
         border-top: 1px solid rgba(127, 140, 141,1.0);
+        color: $copy-right-text;
     }
 }
