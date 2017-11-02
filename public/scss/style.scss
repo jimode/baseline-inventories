@@ -18,8 +18,8 @@ $light-bg-heading-two: #6694b4;
 $dark-bg-heading-one: white;
 $dark-bg-heading-two: #3694b7;
 
-$base-font-size: 16px;
-$body-font: "Cabin", Helvetica, Arial, sans-serif;
+// $base-font-size: 16px;
+// $body-font: "Cabin", Helvetica, Arial, sans-serif;
 // $serif-font: "Gentium Basic", Georgia, serif;
 // $heading-font: $body-font;
 
@@ -224,6 +224,13 @@ a {
 
     .contact-card {
         background-color: #34495E;
+    }
+}
+
+#pricing-table {
+    .inventory {
+        color: blue;
+        font-size: 50px;
     }
 }
 
