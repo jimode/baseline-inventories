@@ -18,10 +18,10 @@ $light-bg-heading-two: #6694b4;
 $dark-bg-heading-one: white;
 $dark-bg-heading-two: #3694b7;
 
-// $base-font-size: 16px;
-// $body-font: "Cabin", Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$body-font: "Cabin", Helvetica, Arial, sans-serif;
 // $serif-font: "Gentium Basic", Georgia, serif;
-// $heading-font: $body-font;
+$heading-font: $body-font;
 
 $baseline: $base-font-size * 1.5;
 
@@ -228,9 +228,31 @@ a {
 }
 
 #pricing-table {
+    #furnished {
+        // color: white;
+        // background-color: grey;
+    }
+    // background-color: blue;
     .inventory {
-        color: blue;
-        font-size: 50px;
+        color: white;
+        background-color: orange;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .check-in {
+        color: white;
+        background-color: cyan;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .check-in-inventory {
+        color: white;
+        background-color: brown;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
